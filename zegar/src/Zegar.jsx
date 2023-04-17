@@ -1,6 +1,25 @@
 import React from "react";
 
-function Zegar(){
+function Zegar(props){
+
+var godziny = props.godziny_r;
+var minuty = props.minuty_r;
+var sekundy = props.sekundy_r;
+
+
+
+if(godziny>12){
+  godziny-=12;
+}
+
+  const minuty_s= 'rotate('+((minuty*6)+(sekundy*6)/60)+', 112, 98.5)';
+
+
+  const sekundy_s= 'rotate('+sekundy*6+', 112, 98.5)';
+
+
+  const godziny_s= 'rotate('+((godziny*30)+(minuty*6)/12)+', 112, 98.5)';
+
   return (
     <div>
 
@@ -65,24 +84,24 @@ function Zegar(){
           fill="#1a1a1a"
           fillOpacity="1"
           strokeWidth="0.265"
-          transform="rotate(0, 112, 98.5)"
           d="M111.51 46.959H112.497V99.023H111.51z"
+          transform={sekundy_s}
         ></path>
         <path
           id="hours-hand"
           fill="#1a1a1a"
           fillOpacity="1"
           strokeWidth="0.265"
-          transform="rotate(0, 112, 98.5)"
           d="M110.572 85.696H113.711V99.078H110.572z"
+          transform={godziny_s}
         ></path>
         <path
           id="minutes-hand"
           fill="#1a1a1a"
           fillOpacity="1"
           strokeWidth="0.265"
-          transform="rotate(0, 112, 98.5)"
           d="M111.092 72.59H113.401V98.69500000000001H111.092z"
+          transform={minuty_s}
         ></path>
         <path
           id="rect521"
