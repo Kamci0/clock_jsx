@@ -1,5 +1,12 @@
 import React from "react";
 
+
+//16g= 120deg
+//15g = 90deg
+//30m = 180deg
+//30m30s = 183deg
+//31m = 186deg
+
 function Zegar(props){
 
 var godziny = props.godziny_r;
@@ -21,13 +28,13 @@ if(godziny>12){
   const godziny_s= 'rotate('+((godziny*30)+(minuty*6)/12)+', 112, 98.5)';
 
   return (
-    <div>
+    <div className="zegar">
 
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       width="210mm"
-      height="297mm"
+      height="250mm"
       version="1.1"
       viewBox="0 0 210 297"
     >
@@ -81,7 +88,7 @@ if(godziny>12){
         ></circle>
         <path
           id="seconds-hand"
-          fill="#1a1a1a"
+          fill="#F00"
           fillOpacity="1"
           strokeWidth="0.265"
           d="M111.51 46.959H112.497V99.023H111.51z"
@@ -92,7 +99,7 @@ if(godziny>12){
           fill="#1a1a1a"
           fillOpacity="1"
           strokeWidth="0.265"
-          d="M110.572 85.696H113.711V99.078H110.572z"
+          d="M110.572 75.696H113.711V99.078H110.572z"
           transform={godziny_s}
         ></path>
         <path
@@ -100,7 +107,7 @@ if(godziny>12){
           fill="#1a1a1a"
           fillOpacity="1"
           strokeWidth="0.265"
-          d="M111.092 72.59H113.401V98.69500000000001H111.092z"
+          d="M111.092 50.59H113.401V98.69500000000001H111.092z"
           transform={minuty_s}
         ></path>
         <path

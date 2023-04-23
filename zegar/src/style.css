@@ -1,0 +1,47 @@
+*{
+    margin:0;
+}
+
+#root{
+    height: 100dvh;
+    background-color: rgb(62, 59, 59);
+}
+
+h1{
+    border-bottom: 2px solid green ;
+    text-align: center;
+    width: 100%;
+    color: green;
+    font-size: 291%;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.inputs{
+    margin-top: 90px;
+    padding: 30px;
+    border: 2px solid green;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.inputs > div{
+    margin: 9px 0;
+}
+
