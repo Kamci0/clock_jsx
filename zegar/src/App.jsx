@@ -228,7 +228,7 @@ class App extends React.Component {
               <input type="number" name="seconds" id="seconds" />
             </div>
             <div>
-              <button onClick={this.handle_click}>Dodaj czas</button>
+              <button onClick={this.handle_click}>Zmień czas</button>
               <button onClick={this.handle_reset}>Resetuj czas</button>
             </div>
             <div>

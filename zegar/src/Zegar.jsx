@@ -34,7 +34,7 @@ if(godziny>12){
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       width="210mm"
-      height="230mm"
+      height="250mm"
       version="1.1"
       viewBox="0 0 210 297"
     >
@@ -61,6 +61,30 @@ if(godziny>12){
           fill="#999"
           strokeWidth="0.265"
         ></circle>
+                <path
+          id="seconds-hand"
+          fill="#F00"
+          fillOpacity="1"
+          strokeWidth="0.265"
+          d="M111.51 46.959H112.497V99.023H111.51z"
+          transform={sekundy_s}
+        ></path>
+        <path
+          id="hours-hand"
+          fill="#1a1a1a"
+          fillOpacity="1"
+          strokeWidth="0.265"
+          d="M110.572 75.696H113.711V99.078H110.572z"
+          transform={godziny_s}
+        ></path>
+        <path
+          id="minutes-hand"
+          fill="#1a1a1a"
+          fillOpacity="1"
+          strokeWidth="0.265"
+          d="M111.092 50.59H113.401V98.69500000000001H111.092z"
+          transform={minuty_s}
+        ></path>
         <circle
           cx="112.032"
           cy="98.708"
@@ -86,6 +110,30 @@ if(godziny>12){
           fillOpacity="1"
           strokeWidth="0.007"
         ></circle>
+        <path
+          id="seconds-hand"
+          fill="#F00"
+          fillOpacity="1"
+          strokeWidth="0.265"
+          d="M111.51 46.959H112.497V99.023H111.51z"
+          transform={sekundy_s}
+        ></path>
+        <path
+          id="hours-hand"
+          fill="#1a1a1a"
+          fillOpacity="1"
+          strokeWidth="0.265"
+          d="M110.572 75.696H113.711V99.078H110.572z"
+          transform={godziny_s}
+        ></path>
+        <path
+          id="minutes-hand"
+          fill="#1a1a1a"
+          fillOpacity="1"
+          strokeWidth="0.265"
+          d="M111.092 50.59H113.401V98.69500000000001H111.092z"
+          transform={minuty_s}
+        ></path>
         <path
           id="rect521"
           fill="#1a1a1a"
